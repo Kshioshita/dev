@@ -1,2 +1,3 @@
-# Custom Sass-Boilerplate Mashup
-Template for web developers
+# Sprite Sheet
+
+I used Compass to generate sprite sheets and created custom icons.
