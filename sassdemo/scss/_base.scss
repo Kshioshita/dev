@@ -1,0 +1,46 @@
+body{
+	background-color: $bgcolor;
+	font-family: $copyfont;
+}
+
+h1, h2{
+	font-family: $headerfont;
+}
+
+header{
+	@include centerme;
+	@include roundedcorners();
+	@include box;
+	h1{
+		color: $headercolor;
+	} //end h1
+} //end header
+
+nav{
+	@include box;
+	@include roundedcorners(20px);
+	ul{
+		@include centerme;
+		li{
+			list-style: none;
+			display: inline-block;
+			margin-right: 20px;
+			a{
+				font-family: $linkfont;
+				color: $headercolor;
+			} //end a
+			a:hover{
+				color: $copycolor;
+			}
+		} //end li
+	}// end ul
+} //end nav
+
+section{
+	@include box;
+	@include roundedcorners(10px);
+	h2{
+		font-family: $headerfont;
+		color: $headercolor;
+	} //end h2
+} //end section

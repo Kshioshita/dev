@@ -41,6 +41,7 @@ h2{
 	margin: 30px;
 	display: inline-block;
 	width: 33.33%;
+	/*min-height: 200px;*/
 }
 
 a{
@@ -61,6 +62,9 @@ div{
 
 .sop{
 	background-image: url("../img/sopstationary.png");
+	/*margin-left: 0px;*/
+	/*margin-right: 0px;*/
+	/*width: 33.33%;*/
 }
 
 .github{
@@ -68,5 +72,29 @@ div{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	/*margin: 0px;*/
+	/*float: left;*/
+}
+
+.exquisite{
+	background-image: url("../img/tile-wide.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	/*margin-left: 0px;*/
+	/*margin-right: 0px;*/
+	/*width: 33.33%;*/
+}
+
+.bash{
+	background-image: url("../img/hellome.jpg");
+	/*margin-left: 0px;*/
+	/*margin-right: 0px;*/
+	/*width: 33.33%;*/
+}
+
+.whitetext{
+	color: white;
 }
 

@@ -45,14 +45,17 @@ a:hover{
 	margin-top: 10px;
 	border-top: dotted;
 	border-bottom: dotted;
-	border-width: 2px;
+	border-left: 0;
+	border-right: 0;
+	/*border-width: 4px;*/
 
 }
 
 .navitem{
-	width: 33%;
+	width: 25%;
 	display: inline-block;
 	float: left;
+	font-size: .75em;
 }
 .greeting{
 	text-align: center;
@@ -63,9 +66,10 @@ a:hover{
 	background-image: url("../img/sopstationary.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 17px;
+	padding-bottom: 14px;
 	background-color: white;
 	margin-right: 20px;
+	border: dotted black;
 
 }
 p{
@@ -88,6 +92,7 @@ ul{
 	padding-bottom: 15px;
 	text-align: left;
 	max-width: 40%;
+	border:dotted black;
 }
 span{
 	color: #f442a7;
@@ -97,12 +102,14 @@ div{
 	display: inline-block;
 	text-align: left;
 }
-
+/*
 #git{
 	background-image: url("../img/sopstationary.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 0px;
 	margin-right: 20px;
+	border: solid black thin;
+	box-sizing: border-box;
 
-}
+}*/
