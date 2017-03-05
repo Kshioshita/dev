@@ -1,0 +1,25 @@
+@import 'icon/*.png';
+@include all-icon-sprites;
+
+h1{
+	font-family: $headerfont;
+	font-size: 3em;
+}
+
+body{
+	font-family: $bodyfont;
+}
+li{
+	list-style: none;
+	a{
+			display: inline-block;
+			width: 400px;
+			height: 400px;
+			span{
+				position: absolute;
+				top: -9999em;
+				left: -9999em;
+				
+			}//span
+		}//a
+}
