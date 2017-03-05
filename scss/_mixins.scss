@@ -2,3 +2,9 @@
 	text-align: center;
 
 }
+
+@mixin backgroundimg(){
+	background-image: url($imageurl);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

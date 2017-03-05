@@ -478,8 +478,8 @@ textarea {
   padding: 0.2em 0;
 }
 
-.icon-sprite, .icon-bash, .icon-corpse, .icon-github, .icon-sop {
-  background-image: url('../img/icon-s14c4d961ee.png');
+.icon-sprite, .icon-bash, .icon-corpse, .icon-github, .icon-holder, .icon-sop, .icon-ssheet {
+  background-image: url('../img/icon-sf624797b9a.png');
   background-repeat: no-repeat;
 }
 
@@ -504,27 +504,54 @@ textarea {
   background-position: 0 -800px;
 }
 
+.icon-holder {
+  background-position: 0 -1200px;
+}
+
 .icon-sop {
-  background-position: 0 -1400px;
+  background-position: 0 -1800px;
 }
 .icon-sop:hover, .icon-sop.sop-hover {
-  background-position: 0 -1200px;
+  background-position: 0 -1600px;
+}
+
+.icon-ssheet {
+  background-position: 0 -2200px;
+}
+.icon-ssheet:hover, .icon-ssheet.ssheet-hover {
+  background-position: 0 -2000px;
+}
+
+html {
+  height: 100%;
 }
 
 h1 {
   font-family: "Shadows Into Light Two", cursive;
   font-size: 3em;
   text-align: center;
+  margin: 0px;
+  padding-top: 20px;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
   text-align: center;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
 }
 
 ul {
   max-width: 600px;
-  text-align: center;
   padding: 0px;
   margin: 0 auto;
 }

@@ -1,19 +1,36 @@
 @import 'icon/*.png';
 @include all-icon-sprites;
 
+html{
+	height: 100%;
+}
 h1{
 	font-family: $headerfont;
 	font-size: 3em;
 	@include centerme;
+	margin: 0px;
+	padding-top: 20px;
 }
 
 body{
 	font-family: $bodyfont;
-	@include centerme;
+	@include centerme ;
+	@include backgroundimg;
+	height: 100%;
+}
+
+.wrapper{
+	// padding-top: 10px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 650px;
+	background-color: rgba(255, 255, 255, 1);
+	// height: 100%;
 }
 ul{
 	max-width: 600px;
-	@include centerme;
+	// @include centerme;
+
 	padding: 0px;
 	margin: 0 auto;
 	li{
