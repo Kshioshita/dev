@@ -4,22 +4,32 @@
 h1{
 	font-family: $headerfont;
 	font-size: 3em;
+	@include centerme;
 }
 
 body{
 	font-family: $bodyfont;
+	@include centerme;
 }
-li{
-	list-style: none;
-	a{
-			display: inline-block;
-			width: 400px;
-			height: 400px;
-			span{
-				position: absolute;
-				top: -9999em;
-				left: -9999em;
-				
-			}//span
-		}//a
+ul{
+	max-width: 600px;
+	@include centerme;
+	padding: 0px;
+	margin: 0 auto;
+	li{
+		list-style: none;
+		display: inline-block;
+		a{
+				display: inline-block;
+				width: 200px;
+				height: 200px;
+
+				span{
+					position: absolute;
+					top: -9999em;
+					left: -9999em;
+					
+				}//span
+			}//a
+	}
 }
