@@ -478,8 +478,8 @@ textarea {
   padding: 0.2em 0;
 }
 
-.icon-sprite, .icon-bash, .icon-corpse, .icon-github, .icon-holder, .icon-sop, .icon-ssheet {
-  background-image: url('../img/icon-sf624797b9a.png');
+.icon-sprite, .icon-bash, .icon-corpse, .icon-float, .icon-github, .icon-holder, .icon-sop, .icon-ssheet {
+  background-image: url('../img/icon-s0f06601028.png');
   background-repeat: no-repeat;
 }
 
@@ -497,29 +497,36 @@ textarea {
   background-position: 0 -400px;
 }
 
-.icon-github {
+.icon-float {
   background-position: 0 -1000px;
 }
-.icon-github:hover, .icon-github.github-hover {
+.icon-float:hover, .icon-float.float-hover {
   background-position: 0 -800px;
 }
 
-.icon-holder {
+.icon-github {
+  background-position: 0 -1400px;
+}
+.icon-github:hover, .icon-github.github-hover {
   background-position: 0 -1200px;
 }
 
-.icon-sop {
-  background-position: 0 -1800px;
-}
-.icon-sop:hover, .icon-sop.sop-hover {
+.icon-holder {
   background-position: 0 -1600px;
 }
 
-.icon-ssheet {
+.icon-sop {
   background-position: 0 -2200px;
 }
-.icon-ssheet:hover, .icon-ssheet.ssheet-hover {
+.icon-sop:hover, .icon-sop.sop-hover {
   background-position: 0 -2000px;
+}
+
+.icon-ssheet {
+  background-position: 0 -2600px;
+}
+.icon-ssheet:hover, .icon-ssheet.ssheet-hover {
+  background-position: 0 -2400px;
 }
 
 html {
