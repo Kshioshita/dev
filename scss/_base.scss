@@ -23,7 +23,7 @@ body{
 	// padding-top: 10px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 650px;
+	max-width: 750px;
 	background-color: rgba(255, 255, 255, 1);
 	// height: 100%;
 }
@@ -50,3 +50,13 @@ ul{
 			}//a
 	}
 }
+
+/*media query block medium mobile*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+} /*end medium tablet  block*/
+
+/*media query block small mobile*/
+@media only screen and (max-width: 480px){
+
+} /*end small mobile block*/

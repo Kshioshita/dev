@@ -553,7 +553,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 750px;
   background-color: white;
 }
 
@@ -577,6 +577,10 @@ ul li a span {
   left: -9999em;
 }
 
+/*media query block medium mobile*/
+/*end medium tablet  block*/
+/*media query block small mobile*/
+/*end small mobile block*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
