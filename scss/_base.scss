@@ -1,6 +1,14 @@
 @import 'icon/*.png';
 @include all-icon-sprites;
 
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 html{
 	height: 100%;
 }

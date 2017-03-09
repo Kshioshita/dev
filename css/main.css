@@ -478,8 +478,8 @@ textarea {
   padding: 0.2em 0;
 }
 
-.icon-sprite, .icon-bash, .icon-corpse, .icon-float, .icon-github, .icon-holder, .icon-sop, .icon-ssheet {
-  background-image: url('../img/icon-s0f06601028.png');
+.icon-sprite, .icon-bash, .icon-corpse, .icon-float, .icon-github, .icon-holder, .icon-sheet-hover, .icon-sop, .icon-ssheet {
+  background-image: url('../img/icon-s0ba6acbe21.png');
   background-repeat: no-repeat;
 }
 
@@ -515,18 +515,30 @@ textarea {
   background-position: 0 -1600px;
 }
 
-.icon-sop {
-  background-position: 0 -2200px;
-}
-.icon-sop:hover, .icon-sop.sop-hover {
+.icon-sheet-hover {
   background-position: 0 -2000px;
 }
 
+.icon-sop {
+  background-position: 0 -2400px;
+}
+.icon-sop:hover, .icon-sop.sop-hover {
+  background-position: 0 -2200px;
+}
+
 .icon-ssheet {
-  background-position: 0 -2600px;
+  background-position: 0 -2800px;
 }
 .icon-ssheet:hover, .icon-ssheet.ssheet-hover {
-  background-position: 0 -2400px;
+  background-position: 0 -2600px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
