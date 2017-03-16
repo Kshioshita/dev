@@ -1,3 +1,20 @@
+@import 'icon/*.png';
+@include all-icon-sprites;
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after{
+	display: table;
+	content: " ";
+	clear: both;
+}
+
 body{
 	font-family: $headerfont;
 	background-color: $hovercolor;
@@ -19,25 +36,63 @@ header{
 		padding:20px;
 	}
 }
-ul{
-	@include navStyle();
-	text-align: left;
-	padding-left: 10px;
-	box-sizing: border-box;
-	margin:0;
-	font-size: 1.25em;
-	background-color: $navcolor;
-	li{
-		@include navItem();
-		a{
-			color: $acolor;
-			text-decoration: none;
-		} //a
-		a:hover{
-			color: $hovercolor;
-		}
-	} //li
-} //ul
+nav{
+	position: sticky;
+	top:0;
+	ul{
+
+		@include navStyle();
+		text-align: left;
+		padding-left: 10px;
+		box-sizing: border-box;
+		margin:0;
+		font-size: 1.75em;
+		background-color: $navcolor;
+		
+		li{
+
+			@include navItem();
+			a{
+				color: $acolor;
+				text-decoration: none;
+			} //a
+			a:hover{
+				color: $hovercolor;
+			}
+		} //li
+	} //ul
+} //nav
+
+#social, #contact{
+	h3{
+		@include centerme;
+		font-family: $headerfont;
+		font-size: 3em;
+	}
+	ul{
+		width: 100%;
+		@include centerme;
+		padding-bottom: 10px;
+		margin-top: 10px;
+		li{
+			list-style: none;
+			display: inline-block;
+			padding:5px;
+			a{
+				display: inline-block;
+				width: 400px;
+				height: 400px;
+				zoom:.4;
+				span{
+					position: absolute;
+					top: -9999em;
+					left: -9999em;
+					
+				}//span
+			}//a
+		} //li
+	} //ul
+}
 
 section{
 	font-family: $bodyfont;
@@ -46,23 +101,56 @@ section{
 	width: 85%;
 	margin: 30px auto;
 	h2{
+		@include centerme;
 		font-family: $headerfont;
 		margin:0px;
-		font-size: 4em;
+		font-size: 6em;
 	}
-	p{
+	img{
+		display: inline-block;
+		width: 50%;
+	}
+	.welcomep{
+		float: right;
+		text-indent: 2.5em;
+		width: 50%;
+		display: inline-block;
 		font-size: 1.25em;
+		margin-bottom: 10px;
 	}
 	#quote1, #quote2, #quote3{
+		margin-top: 70px;
+		margin-bottom: 20px;
 		color: $headercolor;
 		font-family: $headerfont;
 		font-size: 2em;
 		@include centerme;
+		float: none;
+		width: 100%;
 	}
 }
-
+.grid{
+	padding:0px;
+	width: 100%;
+	box-sizing:border-box;
+	li{
+		box-sizing:border-box;
+		padding: 0px;
+		margin-bottom: 5px;
+		// margin-left: %;
+		width: 30%;
+		display: inline-block;
+		img{
+			width: 100%;
+			padding: 0px;
+			display: inline-block;
+		}
+	}
+}
 footer{
+	clear: both;
 	@include centerme;
+	padding-bottom: 10px;
 }
 .hidden{
     animation-name: hide-animation; 
@@ -101,3 +189,106 @@ footer{
 		display: block;
 	}
 }
+@media only screen and (min-width: 447px) and (max-width: 887px){
+	#social, #contact{
+		ul{
+			margin:0 auto;
+			@include centerme;
+			li{
+				@include centerme;
+				display:block;
+				width: 100%;
+				margin:0 auto;
+
+				a{
+					margin: 0 auto;
+					display:block;
+					width: 400px;
+					height: 400px;
+					zoom:.5;
+				}//a
+			}//li
+		}//ul
+	}
+	#social{
+		.grid{
+			ul{
+				li{
+					width: 100%;
+					display:block;
+					img{
+						width: 100%;
+						padding: 0px;
+						display:block;
+					}
+				}
+			}
+		}
+	}
+	section{
+		text-align: center;
+		img{
+			max-width: 400px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.welcomep{
+			display: block;
+			text-align: left;
+			width: 100%;
+		}
+	}
+} /*end medium tablet  block*/
+@media all and (max-width: 446px){
+	h1{
+		font-size: 1.75em;
+	}
+	#social, #contact{
+		ul{
+			margin:0 auto;
+			@include centerme;
+			li{
+				@include centerme;
+				display:block;
+				width: 100%;
+				margin:0 auto;
+
+				a{
+					margin: 0 auto;
+					display:block;
+					width: 400px;
+					height: 400px;
+					zoom:.5;
+				}//a
+			}//li
+		}//ul
+	}
+	#social{
+		.grid{
+			ul{
+				li{
+					width: 100%;
+					display:block;
+					img{
+						width: 100%;
+						padding: 0px;
+						display:block;
+					}
+				}
+			}
+		}
+	}
+	section{
+		text-align: center;
+		img{
+			max-width: 400px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.welcomep{
+			display: block;
+			text-align: left;
+			width: 100%;
+		}
+	}
+} 

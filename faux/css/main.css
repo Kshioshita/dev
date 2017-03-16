@@ -4,7 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -485,6 +485,67 @@ textarea {
   padding: 0.2em 0;
 }
 
+.icon-sprite, .icon-email, .icon-etsy, .icon-facebook, .icon-instagram, .icon-phone, .icon-twitter {
+  background-image: url('../img/icon-sf43b64dad5.png');
+  background-repeat: no-repeat;
+}
+
+.icon-email {
+  background-position: 0 -400px;
+}
+.icon-email:hover, .icon-email.email-hover {
+  background-position: 0 0;
+}
+
+.icon-etsy {
+  background-position: 0 -1200px;
+}
+.icon-etsy:hover, .icon-etsy.etsy-hover {
+  background-position: 0 -800px;
+}
+
+.icon-facebook {
+  background-position: 0 -2000px;
+}
+.icon-facebook:hover, .icon-facebook.facebook-hover {
+  background-position: 0 -1600px;
+}
+
+.icon-instagram {
+  background-position: 0 -2800px;
+}
+.icon-instagram:hover, .icon-instagram.instagram-hover {
+  background-position: 0 -2400px;
+}
+
+.icon-phone {
+  background-position: 0 -3600px;
+}
+.icon-phone:hover, .icon-phone.phone-hover {
+  background-position: 0 -3200px;
+}
+
+.icon-twitter {
+  background-position: 0 -4400px;
+}
+.icon-twitter:hover, .icon-twitter.twitter-hover {
+  background-position: 0 -4000px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
 body {
   font-family: "grand_hotelregular", cursive;
   background-color: #7FC7AF;
@@ -506,7 +567,11 @@ header h1 {
   padding: 20px;
 }
 
-ul {
+nav {
+  position: sticky;
+  top: 0;
+}
+nav ul {
   width: 100%;
   text-align: center;
   padding: 0px;
@@ -515,46 +580,108 @@ ul {
   padding-left: 10px;
   box-sizing: border-box;
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.75em;
   background-color: #FFDA87;
 }
-ul li {
+nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px;
 }
-ul li a {
+nav ul li a {
   color: #3FB8AF;
   text-decoration: none;
 }
-ul li a:hover {
+nav ul li a:hover {
   color: #7FC7AF;
 }
 
+#social h3, #contact h3 {
+  text-align: center;
+  font-family: "grand_hotelregular", cursive;
+  font-size: 3em;
+}
+#social ul, #contact ul {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+#social ul li, #contact ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+}
+#social ul li a, #contact ul li a {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  zoom: .4;
+}
+#social ul li a span, #contact ul li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+}
+
 section {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #FF9E9D;
   padding: 20px;
   width: 85%;
   margin: 30px auto;
 }
 section h2 {
+  text-align: center;
   font-family: "grand_hotelregular", cursive;
   margin: 0px;
-  font-size: 4em;
+  font-size: 6em;
 }
-section p {
+section img {
+  display: inline-block;
+  width: 50%;
+}
+section .welcomep {
+  float: right;
+  text-indent: 2.5em;
+  width: 50%;
+  display: inline-block;
   font-size: 1.25em;
+  margin-bottom: 10px;
 }
 section #quote1, section #quote2, section #quote3 {
+  margin-top: 70px;
+  margin-bottom: 20px;
   color: #FF3D7F;
   font-family: "grand_hotelregular", cursive;
   font-size: 2em;
   text-align: center;
+  float: none;
+  width: 100%;
+}
+
+.grid {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.grid li {
+  box-sizing: border-box;
+  padding: 0px;
+  margin-bottom: 5px;
+  width: 30%;
+  display: inline-block;
+}
+.grid li img {
+  width: 100%;
+  padding: 0px;
+  display: inline-block;
 }
 
 footer {
+  clear: both;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .hidden {
@@ -589,6 +716,97 @@ footer {
   100% {
     opacity: 1;
     display: block;
+  }
+}
+@media only screen and (min-width: 447px) and (max-width: 887px) {
+  #social ul, #contact ul {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #social ul li, #contact ul li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #social ul li a, #contact ul li a {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 400px;
+    zoom: .5;
+  }
+
+  #social .grid ul li {
+    width: 100%;
+    display: block;
+  }
+  #social .grid ul li img {
+    width: 100%;
+    padding: 0px;
+    display: block;
+  }
+
+  section {
+    text-align: center;
+  }
+  section img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section .welcomep {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+/*end medium tablet  block*/
+@media all and (max-width: 446px) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  #social ul, #contact ul {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #social ul li, #contact ul li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #social ul li a, #contact ul li a {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 400px;
+    zoom: .5;
+  }
+
+  #social .grid ul li {
+    width: 100%;
+    display: block;
+  }
+  #social .grid ul li img {
+    width: 100%;
+    padding: 0px;
+    display: block;
+  }
+
+  section {
+    text-align: center;
+  }
+  section img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  section .welcomep {
+    display: block;
+    text-align: left;
+    width: 100%;
   }
 }
 /* ==========================================================================
