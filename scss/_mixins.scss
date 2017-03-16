@@ -4,7 +4,6 @@
 }
 
 @mixin backgroundimg(){
-	background-image: url($imageurl);
-	background-repeat: no-repeat;
 	background-size: cover;
+	background: url($imageurl) center center fixed no-repeat;
 }

@@ -478,8 +478,8 @@ textarea {
   padding: 0.2em 0;
 }
 
-.icon-sprite, .icon-bash, .icon-corpse, .icon-float, .icon-github, .icon-holder, .icon-sheet-hover, .icon-sop, .icon-ssheet {
-  background-image: url('../img/icon-s0ba6acbe21.png');
+.icon-sprite, .icon-bash, .icon-corpse, .icon-faux, .icon-float, .icon-github, .icon-holder, .icon-sb, .icon-sheet-hover, .icon-sop, .icon-ssheet {
+  background-image: url('../img/icon-s3cdce9882e.png');
   background-repeat: no-repeat;
 }
 
@@ -497,40 +497,54 @@ textarea {
   background-position: 0 -400px;
 }
 
-.icon-float {
+.icon-faux {
   background-position: 0 -1000px;
 }
-.icon-float:hover, .icon-float.float-hover {
+.icon-faux:hover, .icon-faux.faux-hover {
   background-position: 0 -800px;
 }
 
-.icon-github {
+.icon-float {
   background-position: 0 -1400px;
 }
-.icon-github:hover, .icon-github.github-hover {
+.icon-float:hover, .icon-float.float-hover {
   background-position: 0 -1200px;
 }
 
-.icon-holder {
+.icon-github {
+  background-position: 0 -1800px;
+}
+.icon-github:hover, .icon-github.github-hover {
   background-position: 0 -1600px;
 }
 
-.icon-sheet-hover {
+.icon-holder {
   background-position: 0 -2000px;
 }
 
-.icon-sop {
+.icon-sb {
+  background-position: 0 -2600px;
+}
+.icon-sb:hover, .icon-sb.sb-hover {
   background-position: 0 -2400px;
 }
+
+.icon-sheet-hover {
+  background-position: 0 -2800px;
+}
+
+.icon-sop {
+  background-position: 0 -3200px;
+}
 .icon-sop:hover, .icon-sop.sop-hover {
-  background-position: 0 -2200px;
+  background-position: 0 -3000px;
 }
 
 .icon-ssheet {
-  background-position: 0 -2800px;
+  background-position: 0 -3600px;
 }
 .icon-ssheet:hover, .icon-ssheet.ssheet-hover {
-  background-position: 0 -2600px;
+  background-position: 0 -3400px;
 }
 
 *,
@@ -556,9 +570,8 @@ h1 {
 body {
   font-family: "Quicksand", sans-serif;
   text-align: center;
-  background-image: url("../img/background.png");
-  background-repeat: no-repeat;
   background-size: cover;
+  background: url("../img/background.png") center center fixed no-repeat;
   height: 100%;
 }
 
